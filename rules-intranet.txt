@@ -1,0 +1,4 @@
+# Special rules for your intranet
+DOMAIN, order.mi.com, Proxy
+DOMAIN, pan.baidu.com, Proxy
+DOMAIN-SUFFIX, 115.com, Proxy

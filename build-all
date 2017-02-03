@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# Written by janlay, janlay@gmail.com
+
+for file in ./index-*.txt
+do
+    echo "Building file $file..."
+    text-builder -index $file
+done

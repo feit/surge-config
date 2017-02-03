@@ -1,0 +1,59 @@
+DOMAIN-SUFFIX, cn, DIRECT
+DOMAIN-KEYWORD, ali, DIRECT
+DOMAIN-KEYWORD, taobao, DIRECT
+DOMAIN-KEYWORD, 360, DIRECT
+DOMAIN-KEYWORD, baidu, DIRECT
+DOMAIN-SUFFIX, 126.net, DIRECT
+DOMAIN-SUFFIX, 163.com, DIRECT
+DOMAIN-SUFFIX, gtimg.com, DIRECT
+DOMAIN-SUFFIX, jd.com, DIRECT
+DOMAIN-SUFFIX, netease.com, DIRECT
+DOMAIN-SUFFIX, qq.com, DIRECT
+
+# Wi-Fi Authentication
+DOMAIN, captive.apple.com, DIRECT
+# Some services are available locally
+DOMAIN-SUFFIX, ls.apple.com, DIRECT
+
+# Apple services
+DOMAIN-SUFFIX, apple.com, Proxy
+DOMAIN-SUFFIX, icloud.com, Proxy
+DOMAIN-SUFFIX, mzstatic.com, Proxy
+DOMAIN-KEYWORD, aka, Proxy
+
+# Streaming services, comment out if you don't need
+DOMAIN-KEYWORD, qiyi, DIRECT
+DOMAIN-KEYWORD, sohu, DIRECT
+
+# Force some domains which are fucked by GFW while resolving DNS
+DOMAIN-KEYWORD, facebook, Proxy, force-remote-dns
+DOMAIN-KEYWORD, gmail, Proxy, force-remote-dns
+DOMAIN-KEYWORD, google, Proxy, force-remote-dns
+DOMAIN-KEYWORD, youtube, Proxy, force-remote-dns
+DOMAIN-SUFFIX, fbcdn.net, Proxy, force-remote-dns
+DOMAIN-SUFFIX, twitter.com, Proxy, force-remote-dns
+DOMAIN-SUFFIX, twimg.com, Proxy, force-remote-dns
+DOMAIN-SUFFIX, github.com, Proxy, force-remote-dns
+
+# Workaround for some apps
+# Instagram
+DOMAIN-KEYWORD, instagram, Proxy, force-remote-dns
+# SeekingAlpha
+DOMAIN-SUFFIX, seekingalpha.com, DIRECT
+# Telegram
+IP-CIDR, 109.239.140.0/24, Proxy, no-resolve
+IP-CIDR, 149.154.160.0/20, Proxy, no-resolve
+IP-CIDR, 91.108.4.0/22, Proxy, no-resolve
+IP-CIDR, 91.108.56.0/22, Proxy, no-resolve
+
+# Reserved networks, debugging rules should place above this line
+IP-CIDR, 10.0.0.0/8, DIRECT
+IP-CIDR, 100.64.0.0/10, DIRECT
+IP-CIDR, 127.0.0.0/8, DIRECT
+IP-CIDR, 172.0.0.0/8, DIRECT
+IP-CIDR, 192.168.0.0/16, DIRECT
+
+# Detect local network
+GEOIP, CN, DIRECT
+# Use proxy for all others
+FINAL, Proxy

@@ -1,0 +1,5 @@
+💊 Play with GFW = direct
+🇯🇵 SSLedge TYO1 = custom <<<
+
+[Proxy Group]
+Proxy = select, 💊 Play with GFW, 🇯🇵 SSLedge TYO1
