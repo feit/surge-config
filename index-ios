@@ -1,7 +1,7 @@
 # Surge config index file for iOS 9+
 #output 🚦 Auto.conf
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/config.txt
+#include ./config.txt
 
 [Rule]
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/rules-app-blockers.txt
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/rules-main.txt
+#include ./rules-app-blockers.txt
+#include ./rules-main.txt

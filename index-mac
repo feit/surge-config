@@ -1,9 +1,9 @@
 # Surge config index file for Mac OS X 10.11+
 # !Use your username here
-#output /Users/janlay/.surge.conf
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/config.txt
+#output /Users/feit/.surge.conf
+#include ./config.txt
 
 [Rule]
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/rules-intranet.txt
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/rules-mac-blockers.txt
-#include https://gist.github.com/janlay/b57476c72a93b7e622a6/raw/rules-main.txt
+#include ./rules-intranet.txt
+#include ./rules-mac-blockers.txt
+#include ./rules-main.txt
